@@ -32,44 +32,39 @@ class MainApp extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(50.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            const Padding(
-                              padding: EdgeInsets.only(top: 500.0),
-                              child: Text(
-                                'Ceres \nPadala',
-                                style: TextStyle(
-                                  fontFamily: 'LeagueSpartan',
-                                  fontSize: 64,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromRGBO(85, 64, 4, 100),
-                                  height:
-                                      0.9, // Adjust the height property to change vertical spacing
-                                ),
-                              ),
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.all(50.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const Text(
+                            'Ceres \nPadala',
+                            style: TextStyle(
+                              fontFamily: 'LeagueSpartan',
+                              fontSize: 64,
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromRGBO(85, 64, 4, 100),
+                              height:
+                                  0.9, // Adjust the height property to change vertical spacing
                             ),
-                            const SizedBox(height: 10),
-                            const Text(
-                              'Ceres Padala is a convenient delivery service in Negros Occidental, using the Ceres bus network to transport packages between cities.',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                fontSize: 19,
-                                color: Color.fromRGBO(85, 64, 4, 100),
-                              ),
+                          ),
+                          const SizedBox(height: 10),
+                          const Text(
+                            'Ceres Padala is a convenient delivery service in Negros Occidental, using the Ceres bus network to transport packages between cities.',
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              fontSize: 19,
+                              color: Color.fromRGBO(85, 64, 4, 100),
                             ),
-                          ],
-                        ),
-                        Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Padding(
-                            padding: const EdgeInsets.only(bottom: 50.0),
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ), // Add some space between the text and the button
+                          Align(
+                            alignment: Alignment.bottomCenter,
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.push(
@@ -95,8 +90,8 @@ class MainApp extends StatelessWidget {
                               child: const Text("Let's Go"),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],
