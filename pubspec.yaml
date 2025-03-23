@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: ^2.0.0+4
+  http: ^0.13.3
   path: ^1.8.0
   sqflite_common_ffi: ^2.0.0+1
     
@@ -23,6 +24,11 @@ flutter:
   assets:
     - assets/openingbg.png
     - assets/loginbg.png
+    - assets/homebg.png
+    - assets/claimbg.png
+    - assets/confirmedbg.png
+    - assets/profilebg.png
+    - assets/statusbg.png
   fonts:
     - family: LeagueSpartan
       fonts:
